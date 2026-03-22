@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlinGold.com — The Gaming Brand That Hits Different</title>
+<meta name="description" content="SlinGold.com — a punchy, memorable gaming brand domain. Kinetic energy meets golden reward. Premium .com for gaming studios, platforms, and in-game economies.">
+<meta name="keywords" content="gaming domain for sale, gaming brand name, mobile gaming domain, game studio brand, in-game currency brand, slingold">
+<meta property="og:title" content="SlinGold.com — The Gaming Brand That Hits Different">
+<meta property="og:description" content="Kinetic energy meets golden reward. Premium .com gaming brand for sale.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SlinGold.com — Premium Gaming Domain For Sale">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0a14;--surface:rgba(255,255,255,0.03);--border:rgba(255,255,255,0.06);--gold:#fbbf24;--gold2:#f59e0b;--gold-glow:rgba(251,191,36,0.2);--fire:#ef4444;--white:#f5f0e8;--silver:#a8a08e;--ghost:rgba(255,255,255,0.04)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* PARTICLE BG */
+.particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.particles span{position:absolute;border-radius:50%;background:var(--gold);opacity:0;animation:float var(--dur) ease-in-out infinite}
+@keyframes float{0%{opacity:0;transform:translateY(0) scale(0.5)}25%{opacity:0.4}75%{opacity:0.2}100%{opacity:0;transform:translateY(-120vh) scale(0)}}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;z-index:1}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:200px;background:linear-gradient(to top,var(--bg),transparent);z-index:0}
+.hero-badge{font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(251,191,36,0.3);padding:.45rem 1.4rem;border-radius:100px;margin-bottom:2.5rem;animation:fadeDown .8s ease-out both;position:relative;z-index:1}
+.hero-title{font-size:clamp(3.5rem,10vw,8rem);font-weight:800;line-height:.9;letter-spacing:-.03em;margin-bottom:.5rem;animation:fadeUp .8s ease-out .15s both;position:relative;z-index:1}
+.hero-title .slin{color:var(--white)}
+.hero-title .gold{background:linear-gradient(135deg,var(--gold),var(--gold2),#fde68a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-shadow:none}
+.hero-dot-com{font-family:'Space Mono',monospace;font-size:clamp(.9rem,2vw,1.3rem);color:var(--silver);letter-spacing:.12em;margin-bottom:2.2rem;animation:fadeUp .8s ease-out .3s both;position:relative;z-index:1}
+.hero-tagline{font-size:clamp(1rem,2.2vw,1.35rem);font-weight:300;color:var(--silver);max-width:580px;line-height:1.65;margin-bottom:3rem;animation:fadeUp .8s ease-out .45s both;position:relative;z-index:1}
+.hero-cta{display:inline-flex;align-items:center;gap:.6rem;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--bg);font-weight:700;font-size:.95rem;padding:.9rem 2.2rem;border-radius:100px;text-decoration:none;transition:transform .3s,box-shadow .3s;animation:fadeUp .8s ease-out .6s both;position:relative;z-index:1}
+.hero-cta:hover{transform:translateY(-2px);box-shadow:0 12px 40px var(--gold-glow)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+
+section{position:relative;z-index:1;padding:5.5rem 2rem;max-width:1100px;margin:0 auto}
+.section-label{font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.section-heading{font-size:clamp(1.8rem,3.8vw,2.8rem);font-weight:700;line-height:1.15;margin-bottom:1.4rem}
+.section-body{font-size:1rem;line-height:1.8;color:var(--silver);max-width:720px}
+.section-body p+p{margin-top:1rem}
+
+/* CARDS */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem;margin-top:2.5rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.8rem;transition:border-color .3s,box-shadow .3s,transform .3s}
+.card:hover{border-color:rgba(251,191,36,0.25);box-shadow:0 0 30px rgba(251,191,36,0.06);transform:translateY(-3px)}
+.card .icon{font-size:1.6rem;margin-bottom:.8rem}
+.card h3{font-size:1.05rem;font-weight:600;margin-bottom:.5rem}
+.card p{font-size:.88rem;color:var(--silver);line-height:1.65}
+
+/* STATS */
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.4rem;margin-top:2.5rem}
+.stat{text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.8rem 1.2rem;transition:border-color .3s,transform .3s}
+.stat:hover{border-color:rgba(251,191,36,0.2);transform:translateY(-2px)}
+.stat-num{font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--gold),#fde68a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.25rem}
+.stat-lbl{font-size:.8rem;color:var(--silver);line-height:1.4}
+.stat-src{font-family:'Space Mono',monospace;font-size:.58rem;color:rgba(168,160,142,0.45);margin-top:.4rem}
+.stats-foot{font-family:'Space Mono',monospace;font-size:.6rem;color:rgba(168,160,142,0.3);text-align:center;margin-top:1.3rem}
+
+/* NAME ANATOMY */
+.anatomy{display:flex;gap:2rem;margin-top:3rem;justify-content:center;flex-wrap:wrap}
+.anatomy-word{text-align:center;padding:2rem 2.5rem;background:var(--surface);border:1px solid var(--border);border-radius:20px;min-width:200px;transition:border-color .3s,transform .3s}
+.anatomy-word:hover{border-color:rgba(251,191,36,0.2);transform:translateY(-2px)}
+.anatomy-word .word{font-size:2.2rem;font-weight:800;margin-bottom:.6rem}
+.anatomy-word .word-sling{color:var(--fire)}
+.anatomy-word .word-gold{background:linear-gradient(135deg,var(--gold),#fde68a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.anatomy-word .meaning{font-size:.82rem;color:var(--silver);line-height:1.5}
+.anatomy-plus{font-size:2rem;font-weight:300;color:rgba(251,191,36,0.4);align-self:center}
+
+/* PACKAGE */
+.pkg{background:linear-gradient(145deg,rgba(251,191,36,0.06),rgba(251,191,36,0.01));border:1px solid rgba(251,191,36,0.15);border-radius:20px;padding:2.8rem;margin-top:2.2rem}
+.pkg-head{display:flex;align-items:center;gap:1rem;margin-bottom:1.8rem;flex-wrap:wrap}
+.pkg-domain{font-family:'Space Mono',monospace;font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700}
+.pkg-badge{font-size:.6rem;font-family:'Space Mono',monospace;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .8rem;border-radius:100px;background:rgba(251,191,36,0.15);color:var(--gold);border:1px solid rgba(251,191,36,0.3)}
+.pkg-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.feat{font-size:.92rem;color:var(--silver);padding-left:1.4rem;position:relative;line-height:1.6}
+.feat::before{content:'→';position:absolute;left:0;color:var(--gold)}
+
+/* PRICING */
+.pricing-section{text-align:center;padding:4.5rem 2rem}
+.price-block{display:inline-block;background:linear-gradient(145deg,rgba(251,191,36,0.08),rgba(0,0,0,0.2));border:2px solid rgba(251,191,36,0.2);border-radius:24px;padding:3rem 4rem;margin-top:1.8rem}
+.price-amount{font-size:clamp(2.2rem,4.5vw,3.2rem);font-weight:800;margin-bottom:.25rem}
+.price-note{font-size:.85rem;color:var(--silver);margin-bottom:1.8rem}
+.price-details{text-align:left;font-size:.85rem;color:var(--silver);line-height:2}
+.price-details li{list-style:none;padding-left:1.4rem;position:relative}
+.price-details li::before{content:'→';position:absolute;left:0;color:var(--gold)}
+.price-flex{font-size:.75rem;color:rgba(168,160,142,0.55);margin-top:1.3rem;font-style:italic}
+
+/* BUYERS */
+.buyers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.4rem;margin-top:2.2rem}
+.buyer{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.8rem;transition:border-color .3s,box-shadow .3s,transform .3s}
+.buyer:hover{border-color:rgba(251,191,36,0.2);box-shadow:0 8px 30px rgba(251,191,36,0.06);transform:translateY(-3px)}
+.buyer h3{font-size:1rem;font-weight:600;margin-bottom:.4rem;color:var(--gold)}
+.buyer p{font-size:.85rem;color:var(--silver);line-height:1.65}
+
+/* CONTACT */
+.contact-section{text-align:center;padding:4.5rem 2rem 7rem}
+.contact-email{display:inline-block;font-family:'Space Mono',monospace;font-size:clamp(.85rem,2vw,1.15rem);color:var(--gold);text-decoration:none;border:1px solid rgba(251,191,36,0.3);padding:.9rem 2.2rem;border-radius:100px;margin-top:1.3rem;transition:background .3s,box-shadow .3s}
+.contact-email:hover{background:rgba(251,191,36,0.08);box-shadow:0 0 30px var(--gold-glow)}
+
+footer{position:relative;z-index:1;text-align:center;padding:2rem;font-size:.68rem;color:rgba(168,160,142,0.35);font-family:'Space Mono',monospace;letter-spacing:.04em}
+
+.orb{position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(120px)}
+.orb-1{width:500px;height:500px;background:rgba(251,191,36,0.04);top:-80px;left:-150px}
+.orb-2{width:400px;height:400px;background:rgba(239,68,68,0.03);bottom:-100px;right:-120px}
+
+@media(max-width:640px){
+  .pkg{padding:1.8rem 1.3rem}
+  .price-block{padding:2.2rem 1.8rem}
+  .anatomy{flex-direction:column;align-items:center}
+  .anatomy-plus{display:none}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<div class="particles" id="particles"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Premium .com Domain For Sale</div>
+  <h1 class="hero-title"><span class="slin">Slin</span><span class="gold">Gold</span></h1>
+  <p class="hero-dot-com">.com</p>
+  <p class="hero-tagline">Kinetic energy meets golden reward. A punchy, unforgettable gaming brand built for studios, platforms, and in-game economies.</p>
+  <a href="#contact" class="hero-cta">Enquire Now ↓</a>
+</section>
+
+<!-- NAME ANATOMY -->
+<section>
+  <p class="section-label">The Name</p>
+  <h2 class="section-heading">Two power words. One killer brand.</h2>
+  <div class="section-body">
+    <p>SlinGold isn't a random mashup — it's a compound that carries two of gaming's most primal instincts: the thrill of the shot and the rush of the reward. It sounds like a game. It sounds like a studio. It sounds like a currency. It sounds like a brand that's already worth millions.</p>
+  </div>
+  <div class="anatomy">
+    <div class="anatomy-word">
+      <div class="word word-sling">SLING</div>
+      <div class="meaning">Action. Velocity. Projectile.<br>Think slingshots, skill shots,<br>the physics of the perfect arc.</div>
+    </div>
+    <div class="anatomy-plus">+</div>
+    <div class="anatomy-word">
+      <div class="word word-gold">GOLD</div>
+      <div class="meaning">Reward. Premium. Victory.<br>Every game's universal currency.<br>The tier everyone's grinding for.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SLINGOLD -->
+<section>
+  <p class="section-label">Why This Name</p>
+  <h2 class="section-heading">Built for gaming. Ready for everything.</h2>
+  <div class="section-body">
+    <p>The best gaming brands feel inevitable. Roblox, Supercell, Epic — you can't imagine them called anything else. SlinGold has that same energy. It's short, punchy, visual, and carries instant genre coding. But it's also versatile enough to stretch far beyond gaming.</p>
+  </div>
+  <div class="card-grid">
+    <div class="card"><div class="icon">🎮</div><h3>Instant Genre Coding</h3><p>You hear "SlinGold" and you see a game. The slingshot mechanic is one of the most iconic in gaming history — from Angry Birds to every castle siege game ever made. The name carries that visual DNA.</p></div>
+    <div class="card"><div class="icon">🏆</div><h3>Built-In Currency</h3><p>"Gold" is the universal reward in gaming. SlinGold sounds like an in-game currency, a premium tier, a VIP pass. It's the kind of name a platform would use for its rewards ecosystem.</p></div>
+    <div class="card"><div class="icon">⚡</div><h3>8 Letters, Pure Energy</h3><p>Short enough for a logo. Punchy enough for a loading screen. Easy to spell, impossible to mispronounce. Passes the radio test in every market. No hyphens, no numbers, no confusion.</p></div>
+    <div class="card"><div class="icon">🎰</div><h3>Casino & Betting Crossover</h3><p>The gold rush energy translates perfectly to casino gaming, betting platforms, and lottery brands. "Sling some gold" is a natural call to action for any wagering product.</p></div>
+    <div class="card"><div class="icon">📱</div><h3>Mobile-First Feel</h3><p>The name has the kinetic, tactile energy that mobile games thrive on. Flick, sling, launch — it evokes touchscreen gameplay. Perfect for the $200B+ mobile gaming market.</p></div>
+    <div class="card"><div class="icon">💰</div><h3>Fintech / Gold Trading</h3><p>Beyond gaming: "sling gold" works as a fintech or commodity trading brand. Fast, dynamic gold transactions. A secondary buyer pool that adds to the domain's value.</p></div>
+  </div>
+</section>
+
+<!-- MARKET -->
+<section>
+  <p class="section-label">The Market</p>
+  <h2 class="section-heading">Gaming is bigger than film and music combined.</h2>
+  <div class="section-body">
+    <p>The gaming industry hit $188 billion in 2024 and is heading past $200 billion in 2026. Mobile gaming alone — the segment where a name like SlinGold fits most naturally — accounts for nearly half of all gaming revenue. And with 2.85 billion active mobile gamers, the audience is already there.</p>
+  </div>
+  <div class="stat-grid">
+    <div class="stat"><div class="stat-num">~$200B+</div><div class="stat-lbl">Global gaming industry in 2026</div><div class="stat-src">Newzoo / Statista</div></div>
+    <div class="stat"><div class="stat-num">2.85B</div><div class="stat-lbl">Active mobile gamers worldwide</div><div class="stat-src">360 Research, 2024</div></div>
+    <div class="stat"><div class="stat-num">$158B+</div><div class="stat-lbl">Mobile gaming market by 2026</div><div class="stat-src">Precedence Research</div></div>
+    <div class="stat"><div class="stat-num">$2–3B</div><div class="stat-lbl">Global esports revenue</div><div class="stat-src">Newzoo / Statista</div></div>
+  </div>
+  <p class="stats-foot">Sources: <a href="https://www.blog.udonis.co/mobile-marketing/mobile-games/gaming-industry" style="color:inherit;text-decoration:underline" target="_blank">Udonis/Newzoo</a>, <a href="https://www.precedenceresearch.com/mobile-gaming-market" style="color:inherit;text-decoration:underline" target="_blank">Precedence Research</a>, <a href="https://www.statista.com/topics/3121/esports-market/" style="color:inherit;text-decoration:underline" target="_blank">Statista</a> (2024–2026 data)</p>
+  <p class="stats-foot" style="margin-top:0.6rem;color:rgba(168,160,142,0.45);font-style:italic;font-family:'Outfit',sans-serif;font-size:0.78rem;">With mobile gaming at 2.85B players and slingshot mechanics in countless hits, SlinGold is primed for the next big franchise.</p>
+</section>
+
+<!-- PACKAGE -->
+<section>
+  <p class="section-label">What's Included</p>
+  <h2 class="section-heading">One domain. Pure brand power.</h2>
+  <div class="pkg">
+    <div class="pkg-head">
+      <span class="pkg-domain">slingold.com</span>
+      <span class="pkg-badge">Premium .com</span>
+    </div>
+    <div class="pkg-features">
+      <div class="feat">Eight-letter, two-syllable .com</div>
+      <div class="feat">Two power words — action + reward</div>
+      <div class="feat">Zero trademark conflicts</div>
+      <div class="feat">No existing brand confusion</div>
+      <div class="feat">Works across gaming, casino, fintech</div>
+      <div class="feat">Immediate transfer via escrow</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <p class="section-label">Asking Price</p>
+  <h2 class="section-heading">The name every gaming startup wishes they had.</h2>
+  <div class="price-block">
+    <div class="price-amount">$12,000 – $15,000</div>
+    <div class="price-note">For slingold.com</div>
+    <ul class="price-details">
+      <li>Premium brandable .com — gaming-ready</li>
+      <li>Immediate escrow transfer</li>
+      <li>Clean history — no spam, no penalties, no baggage</li>
+      <li>Secure & confidential process</li>
+    </ul>
+    <p class="price-flex">Serious offers invited. Negotiable for quick, clean close.</p>
+  </div>
+</section>
+
+<!-- PERFECT FOR -->
+<section>
+  <p class="section-label">Perfect For</p>
+  <h2 class="section-heading">Who should own SlinGold?</h2>
+  <div class="buyers-grid">
+    <div class="buyer"><h3>Indie Game Studios</h3><p>The name that makes your studio sound like it's already shipped a hit. SlinGold as a studio brand carries instant credibility — punchy, memorable, professional.</p></div>
+    <div class="buyer"><h3>Mobile Game Publishers</h3><p>With 2.85 billion mobile gamers and the slingshot mechanic being one of gaming's most iconic, SlinGold is a natural fit for any physics-based or casual game franchise.</p></div>
+    <div class="buyer"><h3>In-Game Economy Platforms</h3><p>Virtual currency exchanges, reward ecosystems, and gaming loyalty programmes. "SlinGold" sounds like the premium currency players actually want to earn.</p></div>
+    <div class="buyer"><h3>Casino & iGaming Brands</h3><p>Online slots, betting platforms, and social casinos. The gold rush energy and action-packed sound make it a natural for the $100B+ online gambling market.</p></div>
+    <div class="buyer"><h3>Esports Teams & Orgs</h3><p>A team name that sounds like it was born to win. SlinGold as an esports brand carries swagger, energy, and the kind of identity that sponsors love.</p></div>
+    <div class="buyer"><h3>Gold Trading & Fintech</h3><p>A secondary play: "sling gold" as a fast-trading fintech brand. Dynamic commodity trading, gold investment apps, or digital gold platforms.</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <p class="section-label">Get In Touch</p>
+  <h2 class="section-heading">Serious enquiries welcome.</h2>
+  <div class="section-body" style="margin:0 auto;text-align:center;">
+    <p>All discussions treated with complete confidentiality.</p>
+  </div>
+  <a href="/cdn-cgi/l/email-protection#cdacaea8a9a2a0aca4a3beaca1a8be8daaa0aca4a1e3aea2a0" class="contact-email"><span class="__cf_email__" data-cfemail="7617151312191b171f1805171a130536111b171f1a5815191b">[email&#160;protected]</span></a>
+</section>
+
+<footer>
+  Serious enquiries only. All offers treated confidentially.<br>
+  Secure transfer via Escrow.com or preferred broker.<br>
+  &copy; 2026 — Domain offered by private seller. All rights reserved.
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/
